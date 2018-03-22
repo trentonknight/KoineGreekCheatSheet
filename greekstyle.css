@@ -8,12 +8,12 @@ div{
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
   grid-gap: 10px;
   background-color: #5a6c78;
   padding: 15px;
   border: 2px solid #e7792a;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 5px 10px 8px #888888;
   margin-bottom: 10px;
   text-align: justify;
@@ -23,15 +23,36 @@ div{
   text-align: center;
   padding: 5px 0;
   border: 2px solid #e7792a;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 .item2 {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 1;
   font-size: 30px;
-
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .item1 {
   font-size: 20px;
-  text-shadow: black 0.1em 0.1em 0.2em;
+
+}
+#cheatone {
+    font-family: 'GFS Neohellenic', sans-serif;
+    border-collapse: collapse;
+}
+
+#cheatone td, #cheatone th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#cheatone tr:nth-child(even){background-color: #f6f1eb;}
+#cheatone tr:nth-child(odd){background-color: #dddddd;}
+
+#cheatone th {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-size: 14px;
+    width: 50%;
 }
