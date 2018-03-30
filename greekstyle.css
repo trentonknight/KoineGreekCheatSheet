@@ -18,6 +18,12 @@ div{
   color: #535e64;
 }
 
+p {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: lighter;
+}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -36,6 +42,7 @@ div{
   padding: 5px 0;
   border: 2px solid #e7792a;
   border-radius: 10px;
+
 }
 .item2 {
   grid-column: 1 / span 1;
@@ -91,3 +98,45 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
+a[bubbletooltip]:link, a[bubbletooltip]:visited
+       {
+             text-decoration: none;
+             position: relative;
+             color: #535e64;
+       }
+
+       a[bubbletooltip]:before
+       {
+               content: "";
+               position: absolute;
+               border-top: 26px solid #292f45;
+               border-left: 26px solid transparent;
+               border-right: 26px solid transparent;
+               visibility: hidden;
+               top: -20px;
+               left: -12px;
+       }
+
+       a[bubbletooltip]:after
+       {
+               position: absolute;
+               content: attr(bubbletooltip);
+               font-weight: bold;
+               top: -35px;
+               left: -26px;
+               background: #292f45;
+               color: #FFFFFF;
+               padding: 5px 10px;
+               -moz-border-radius: 6px;
+               -webkit-border-radius:6px;
+               -khtml-border-radius:6px;
+               border-radius: 6px;
+               white-space: nowrap;
+               visibility: hidden;
+       }
+
+       a[bubbletooltip]:hover:before, a[bubbletooltip]:hover:after
+       {
+               visibility: visible;
+               -moz-transition: visibility 0s linear .3s;
+       }
