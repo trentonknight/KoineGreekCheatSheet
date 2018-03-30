@@ -1,6 +1,18 @@
+cite {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: lighter;
+
+}
+.item3 {
+font-family: 'Goudy Bookletter 1911', serif;
+font-size: 12px;
+font-weight: lighter;
+}
+
 body {
    background-color: #f6f1eb;
-   font-family: 'GFS Neohellenic', sans-serif;
 }
 div{
   color: #535e64;
@@ -36,7 +48,6 @@ div{
 
 }
 #cheatone {
-    font-family: 'GFS Neohellenic', sans-serif;
     border-collapse: collapse;
 }
 
@@ -51,8 +62,32 @@ div{
 #cheatone th {
     padding-top: 0px;
     padding-bottom: 0px;
-    text-align: left;
+    text-align: center;
     font-family: 'GFS Neohellenic', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     width: 50%;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #535e64;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e7792a;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
 }
