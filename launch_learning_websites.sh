@@ -5,6 +5,7 @@
 	 firefox https://marvel.bible/ & \
 	 firefox https://scaife.perseus.org/library/urn:cts:greekLit:tlg0031/ & \
 	 firefox https://www.koinegreek.com/koine-greek-dictionary & \
+	 firefox https://forvo.com & \
 	 google-chrome https://www.billmounce.com/newtestamentgreek1 & \
 
 
